@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Progress from './components/Progress';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import ProjectCard from './components/ProjectCard';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 <Heading/>
 <Skills/>
 <Projects/>
+{/* <ProjectCard/> */}
 
   {/* <div className="fixed bottom-40 h-14 w-60 rounded-r-md p-2 ml-24 flex justify-center items-center">
   <div className="h-14 w-16 rounded-xl  mr-4 flex justify-center items-center">
