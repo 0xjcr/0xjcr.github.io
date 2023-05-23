@@ -74,8 +74,8 @@ const Heading = () => {
 </h1>
                 <motion.div className="h-4 w-4 rounded-full bg-gray-800 inline-block" style={{ scale }}></motion.div>
                 <h3 className="font-space whitespace-nowrap text-2xl text-indigo-500 mt-6  ml-4 font-bold">I'm Jordan Rollins.</h3>
-                <h4 className="font-space whitespace-nowrap text-xl text-indigo-500 mt-6  ml-4 font-bold">A Software Engineer specialized in Front-End development</h4>
-                <h3 className="font-space whitespace-nowrap text-md text-gray-100 mt-6 uppercase ml-4">Scroll to learn more.</h3>
+                <h4 className="font-space whitespace-nowrap text-xl text-indigo-500 mt-2  ml-4 font-bold">Software Engineer </h4>
+                <h3 className="font-space whitespace-nowrap text-md text-gray-100 mt-8 uppercase ml-4">Scroll to learn more.</h3>
               </div>
             </div>
           </div>
