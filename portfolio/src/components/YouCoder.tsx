@@ -8,12 +8,12 @@ const Projects = () => {
     const { scrollYProgress } = useScroll();
 
     const opacity = useTransform(scrollYProgress, [0.3, 0.5], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.03, 0.4, 0.4, 0.45], [0, 1, 1, 1]);
+    const scale = useTransform(scrollYProgress, [0.03, 0.4, 0.65, 0.7], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
   return (
-    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full mt-20">
       <motion.div
     className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto"
     style={{
@@ -23,7 +23,7 @@ const Projects = () => {
     }}
 >
     <div className="flex flex-col justify-start items-center m-4 ">
-    {/* <div className="flex items-center justify-center text-center h-20 w-40 m-4 text-indigo-500 text-4xl"> Recent Work</div> */}
+    
     </div>
 
     <div className="flex flex-col justify-start items-center mt-4">
@@ -31,7 +31,8 @@ const Projects = () => {
     </div>
 
     <div className="w-1/3 h-auto font-space text-gray-200">
-        <h1><a href="https://www.youcoder.io">youcoder.io</a></h1>
+    <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20"> Recent Work</div>
+        <h1><a className="hover:text-indigo-400" href="https://www.youcoder.io">youcoder.io</a></h1>
         <br/>
         <h3>Empowering seamless coding collaboration and accelerated learning through interactive keystroke capture and exchange.</h3>
         <br/>

@@ -6,8 +6,10 @@ import Skills from './components/Skills';
 
 import Progress from './components/Progress';
 import Contact from './components/Contact';
-import Projects from './components/Projects';
-import ProjectCard from './components/ProjectCard';
+import YouCoder from './components/YouCoder';
+import MealMaster from './components/MealMaster';
+import Scne from './components/Scne';
+
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
 <Progress />
 <Heading/>
 <Skills/>
-<Projects/>
+<YouCoder/>
+<MealMaster/>
+<Scne/>
 {/* <ProjectCard/> */}
 
   {/* <div className="fixed bottom-40 h-14 w-60 rounded-r-md p-2 ml-24 flex justify-center items-center">
