@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll } from 'framer-motion';
-
+import Sketch from 'react-p5';
 
 const About = () => {
 
@@ -8,13 +8,60 @@ const About = () => {
     const opacity = useTransform(scrollYProgress, [0.91, 0.95], [0, 1]);
     const scale = useTransform(scrollYProgress, [0.91 ,.95], [0, 1]);
     
+    interface Particle {
+        x: number;
+        y: number;
+        xSpeed: number;
+        ySpeed: number;
+      }
+      
+      let particles: Particle[] = [];
+      
+      const setup = (p5: any, canvasParentRef: Element) => {
+        p5.createCanvas(p5.windowWidth, p5.windowHeight * 0.3).parent(canvasParentRef);
+        p5.background(0);
+      
+        for (let i = 0; i < 1000; i++) {
+          particles.push({
+            x: Math.random() * p5.width,
+            y: Math.random() * p5.height,
+            xSpeed: (Math.random() - 0.5) / 2,
+            ySpeed: (Math.random() - 0.5) / 2,
+          });
+        }
+      };
+      
+      const draw = (p5: any) => {
+        p5.background(0);
+        p5.strokeWeight(3); // Change this value to adjust the size of the particle
+      p5.stroke(31,41, 55); // Particle color
+        
+        for (let i = 0; i < particles.length; i++) {
+          let particle = particles[i];
+        
+          // Update the position based on the speed
+          particle.x += particle.xSpeed;
+          particle.y += particle.ySpeed;
+        
+          // Wrap the particles around to the other side of the screen
+          if (particle.x < 0) particle.x = p5.width;
+          else if (particle.x > p5.width) particle.x = 0;
+          if (particle.y < 0) particle.y = p5.height;
+          else if (particle.y > p5.height) particle.y = 0;
+        
+          // Draw the particle
+          p5.stroke(31,41, 55); // Particle color
+          p5.point(particle.x, particle.y); // Draw a single point at the particle's position
+        }
+      };
 
 
 
 
   return (
     <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-1 -mt-36 z-20">
-    <motion.div className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto text-4xl text-gray-400"
+        
+    <motion.div className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto text-4xl text-indigo-500"
     style={{
         opacity,
         scale,
