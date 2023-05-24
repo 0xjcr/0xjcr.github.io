@@ -3,7 +3,7 @@ import { motion, useTransform, useScroll } from 'framer-motion';
 import YC2 from './../assets/YC2.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Projects = () => {
+const YouCoder = () => {
 
     const { scrollYProgress } = useScroll();
 
@@ -13,9 +13,9 @@ const Projects = () => {
 
 
   return (
-    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full mt-20">
+    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full mt-20 z-20">
       <motion.div
-    className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto"
+    className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto relative"
     style={{
       opacity,
       scale,
@@ -32,12 +32,16 @@ const Projects = () => {
 
     <div className="w-1/3 h-auto font-space text-gray-200">
     <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20"> Recent Work</div>
-        <h1><a className="hover:text-indigo-400" href="https://www.youcoder.io">youcoder.io</a></h1>
+        <h1><a className="hover:text-indigo-400 z-30" href="https://www.youcoder.io">youcoder.io</a></h1>
         <br/>
         <h3>Empowering seamless coding collaboration and accelerated learning through interactive keystroke capture and exchange.</h3>
         <br/>
         <h3>I contributed to the front-end development team, focusing on designing the user interface, and integrating dynamic logic and animations.</h3>
-        <div className="flex justify-center items-center my-6"><GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400"/></div> 
+        <div className="flex justify-center items-center my-6">
+        <a href="https://github.com/phpmvk/YouCoder" target="_blank" rel="noopener noreferrer">
+    <GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400 z-50"/></a>
+          
+          </div> 
     </div>
 </motion.div>
 
@@ -47,4 +51,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default YouCoder
