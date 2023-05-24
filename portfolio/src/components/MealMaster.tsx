@@ -32,12 +32,13 @@ const Projects = () => {
 
     <div className="w-1/3 h-auto font-space text-gray-200">
     <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20"> Recent Work</div>
-        <h1 className="text-5xl whitespace-nowrap text-indigo-500">MealMaster AI</h1>
+    <h1><a className="hover:text-indigo-400 z-30" href="https://github.com/0xjcr/MealMasterAI">MealMaster AI</a></h1>
         <br/>
         <h3>By analysing your input on dietary habits, fitness goals, lifestyle, and health conditions, our sophisticated AI constructs a comprehensive, balanced, and delicious meal plan just for you.</h3>
         <br/>
         <h3>As a full-stack contributor to this project, I streamlined the codebase through refactoring to TypeScript, introduced unit testing for improved reliability, and optimized the user interface and user experience.</h3>
-        <div className="flex justify-center items-center my-6"><GitHubIcon className="z-50 scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400"/></div>  
+        <div className="flex justify-center items-center my-6"><a href="https://github.com/0xjcr/MealMasterAI" target="_blank" rel="noopener noreferrer">
+    <GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400 z-50"/></a></div>  
     </div>
 </motion.div>
 

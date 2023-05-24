@@ -32,12 +32,13 @@ const Projects = () => {
 
     <div className="w-1/3 h-auto font-space text-gray-200">
     <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20"> Recent Work</div>
-        <h1 className="text-6xl whitespace-nowrap text-indigo-500">SCNE</h1>
+    <h1><a className="hover:text-indigo-400 z-30" href="https://github.com/0xjcr/scne">SCNE</a></h1>
         <br/>
         <h3>SCNE is a local social networking app designed to connect communities and foster engagement within specific areas. The app provides a platform for users to interact with their neighbors, local businesses, and community organizations, creating a vibrant and connected local ecosystem.</h3>
         <br/>
         <h3>Leading the application's development, I collaborated with a team to design the UI/UX, build a relational database, implement user authentication, and deploy an Express.js server.</h3>
-        <div className="flex justify-center items-center my-6"><GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400"/></div> 
+        <div className="flex justify-center items-center my-6"><a href="https://github.com/0xjcr/scne" target="_blank" rel="noopener noreferrer">
+    <GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400 z-50"/></a></div> 
     </div>
 </motion.div>
 
