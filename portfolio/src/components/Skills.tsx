@@ -3,7 +3,7 @@ import { motion, useTransform, useScroll } from 'framer-motion';
 const Skills = () => {
   const { scrollYProgress } = useScroll();
 
-  const opacity = useTransform(scrollYProgress, [0.8, 0.83], [0, 1]);
+  
   const scale = useTransform(
     scrollYProgress,
     [0.8, 0.82, 0.87, 0.92],

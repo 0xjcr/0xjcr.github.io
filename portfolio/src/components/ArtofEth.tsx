@@ -1,6 +1,6 @@
 import { motion, useTransform, useScroll } from 'framer-motion';
 import AOE4 from './../assets/AOE4.svg';
-import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 const ArtofEth = () => {
   const { scrollYProgress } = useScroll();
@@ -11,7 +11,7 @@ const ArtofEth = () => {
     [0.65, 0.7, 0.75, 0.8],
     [0, 1, 1, 0]
   );
-  const opacityOut = useTransform(scrollYProgress, [0.75, 0.8], [1, 0]);
+  
 
   return (
     <div className='fixed top-1/2 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 -mt-48 px-6 md:px-0 md:-mt-36 z-50'>
