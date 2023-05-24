@@ -13,7 +13,7 @@ const ArtofEth = () => {
 
 
   return (
-    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full mt-20 z-50">
+    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-1 -mt-36 bg-red-400/20 z-50">
       <motion.div
     className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto"
     style={{
@@ -32,7 +32,7 @@ const ArtofEth = () => {
 
     <div className="w-1/3 h-auto font-space text-gray-200">
     <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20">2017</div>
-    <h1><a className="hover:text-indigo-400 z-30" href="https://www.linkedin.com/pulse/crypto-art-art-cryptography-blockchains-beautiful-things-hagell/">ArtofEthereum</a></h1>
+    <h1><a className="hover:text-indigo-400" href="https://www.linkedin.com/pulse/crypto-art-art-cryptography-blockchains-beautiful-things-hagell/">ArtofEthereum</a></h1>
         <br/>
         <h3>Prior to the surge in popularity of NFTs, ArtofEthereum was a pioneering venture that bridged the gap between physical, limited edition art prints and the immutable Ethereum blockchain. The prints were integrated with an NFC chip, which served as a digital link to the blockchain. Upon scanning, the chip would confirm the edition number of the print and provide pertinent information about it.</h3>
         <br/>

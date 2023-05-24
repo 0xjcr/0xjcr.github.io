@@ -8,7 +8,7 @@ import MealMaster from './components/MealMaster';
 import Scne from './components/Scne';
 import Spacing from './components/Spacing';
 import ArtofEth from './components/ArtofEth';
-
+import About from './components/About'
 
 function App() {
   
@@ -23,6 +23,7 @@ return (
 <Scne/>
 <ArtofEth/>
 <Contact />
+<About/>
 <Spacing/>
 </>
   );

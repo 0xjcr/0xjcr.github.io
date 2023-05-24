@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}"],
+  "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
+
   theme: {
     fontFamily: {
       openSans: ["Open Sans", "sans-serif"],
@@ -9,6 +10,6 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
