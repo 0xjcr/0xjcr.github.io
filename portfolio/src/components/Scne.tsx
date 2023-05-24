@@ -7,13 +7,13 @@ const Scne = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.45, 0.65], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [0.45, 0.55], [0, 1]);
     const scale = useTransform(scrollYProgress, [0.45, 0.55, 0.60, .65], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
   return (
-    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-1 -mt-36 bg-red-400/20 z-50">
+    <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-1 -mt-36 z-50">
       <motion.div
     className="flex flex-row-reverse justify-around items-start w-5/6 h-4/6 uppercase font-space mx-auto"
     style={{

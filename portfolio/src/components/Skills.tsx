@@ -10,7 +10,7 @@ const Skills = () => {
 
 
   return (
-    <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-green-400/20 z-10">
+    <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
       <motion.div
         className="mx-auto mt-40 flex justify-center items-start w-5/6 h-4/6 uppercase whitespace-nowrap font-space"
         style={{
