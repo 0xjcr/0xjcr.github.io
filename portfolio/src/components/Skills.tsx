@@ -4,8 +4,8 @@ const Skills = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.03, 0.2, 0.3, 0.45], [0, 1, 1, 100]);
+    const opacity = useTransform(scrollYProgress, [0.9, 0.93], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.9, 0.92, 0.95, 0.98], [0, 1, 1, 100]);
     const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 

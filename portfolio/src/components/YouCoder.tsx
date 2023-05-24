@@ -7,8 +7,8 @@ const YouCoder = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.3, 0.5], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.03, 0.4, 0.65, 0.7], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.05, 0.2], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.03, 0.15, 0.25, 0.35], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
@@ -39,7 +39,7 @@ const YouCoder = () => {
         <h3>I contributed to the front-end development team, focusing on designing the user interface, and integrating dynamic logic and animations.</h3>
         <div className="flex justify-center items-center my-6">
         <a href="https://github.com/phpmvk/YouCoder" target="_blank" rel="noopener noreferrer">
-    <GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400 z-50"/></a>
+    <GitHubIcon className="scale-150 !fill-gray-200 hover:!scale-125 hover:!fill-indigo-400"/></a>
           
           </div> 
     </div>

@@ -3,12 +3,12 @@ import { motion, useTransform, useScroll } from 'framer-motion';
 import SCNE1 from './../assets/SCNE1.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Projects = () => {
+const Scne = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.8, 0.87], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.83, 0.86, 0.96, 1], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.55, 0.75], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.55, 0.65, 0.70, .75], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
@@ -48,4 +48,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Scne

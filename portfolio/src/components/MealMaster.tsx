@@ -7,8 +7,8 @@ const Projects = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.47, 0.55], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.69, 0.72, 0.82, 0.85], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.35, 0.45], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.35, 0.45, 0.50, 0.55], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
@@ -32,7 +32,7 @@ const Projects = () => {
 
     <div className="w-1/3 h-auto font-space text-gray-200">
     <div className="w-40 text-gray-400 text-md whitespace-nowrap -mt-20"> Recent Work</div>
-    <h1><a className="hover:text-indigo-400 z-30" href="https://github.com/0xjcr/MealMasterAI">MealMaster AI</a></h1>
+    <h1><a className="hover:text-indigo-400 z-30 whitespace-nowrap" href="https://github.com/0xjcr/MealMasterAI">MealMaster AI</a></h1>
         <br/>
         <h3>By analysing your input on dietary habits, fitness goals, lifestyle, and health conditions, our sophisticated AI constructs a comprehensive, balanced, and delicious meal plan just for you.</h3>
         <br/>
