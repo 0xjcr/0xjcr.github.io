@@ -31,7 +31,7 @@ const ArtofEth = () => {
 
                 <div className="w-full md:w-1/3 h-auto font-space text-gray-200 text-sm md:text-base">
                     <div className="w-40 text-gray-400 text-sm whitespace-nowrap -mt-20 md:-mt-20 sm:-mt-10"> 2017 </div>
-                    <h1 className="text-lg md:text-xl"><a className="hover:text-indigo-400" href="https://www.linkedin.com/pulse/crypto-art-art-cryptography-blockchains-beautiful-things-hagell/">ArtofEthereum</a></h1>
+                    <h1 className="text-lg md:text-5xl"><a className="hover:text-indigo-400" href="https://www.linkedin.com/pulse/crypto-art-art-cryptography-blockchains-beautiful-things-hagell/">ArtofEthereum</a></h1>
                     <br/>
                     <h3 className="text-sm md:text-lg">Before NFTs became popular, ArtofEthereum was a pioneering project connecting limited edition art prints and the Ethereum blockchain. Prints featured an NFC chip linking to the blockchain, confirming the print's edition number and providing related information upon scanning.</h3>
                     <br/>

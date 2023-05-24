@@ -29,7 +29,7 @@ const YouCoder = () => {
 
                 <div className="w-full md:w-1/3 h-auto font-space text-gray-200 text-sm md:text-base">
                     <div className="w-40 text-gray-400 text-sm whitespace-nowrap -mt-20 md:-mt-20 "> Recent Work</div>
-                    <h1 className="text-lg md:text-xl"><a className="hover:text-indigo-400 z-50" href="https://www.youcoder.io">youcoder.io</a></h1>
+                    <h1 className="text-lg md:text-5xl"><a className="hover:text-indigo-400 z-50" href="https://www.youcoder.io">youcoder.io</a></h1>
                     <br/>
                     <h3 className="text-sm md:text-lg">Empowering seamless coding collaboration and accelerated learning through interactive keystroke capture and exchange.</h3>
                     <br/>

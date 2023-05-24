@@ -29,7 +29,7 @@ const MealMaster = () => {
 
                 <div className="w-full md:w-1/3 h-auto font-space text-gray-200 text-sm md:text-base">
                     <div className="w-40 text-gray-400 text-sm whitespace-nowrap -mt-20 md:-mt-20 sm:-mt-10"> Recent Work</div>
-                    <h1 className="text-lg md:text-xl"><a className="hover:text-indigo-400 whitespace-nowrap" href="https://github.com/0xjcr/MealMasterAI">MealMaster AI</a></h1>
+                    <h1 className="text-lg md:text-5xl"><a className="hover:text-indigo-400 whitespace-nowrap" href="https://github.com/0xjcr/MealMasterAI">MealMaster AI</a></h1>
                     <br/>
                     <h3 className="text-sm md:text-lg">Our AI analyzes your dietary habits, fitness goals, and lifestyle to create a customized, balanced, and tasty meal plan for you.</h3>
                     <br/>
