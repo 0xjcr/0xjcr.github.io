@@ -54,7 +54,7 @@ const Heading = () => {
       const { scrollYProgress } = useScroll();
     
       // Create a variable that scales from 1 to 1.5 as scrollYProgress goes from 0 to 1
-      const scale = useTransform(scrollYProgress, [0, 0.3], [1, 300]);
+      const scale = useTransform(scrollYProgress, [0, 0.15], [1, 300]);
 
 
   return (

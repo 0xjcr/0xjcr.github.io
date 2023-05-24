@@ -7,8 +7,8 @@ const Scne = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.55, 0.75], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.55, 0.65, 0.70, .75], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.45, 0.65], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.45, 0.55, 0.60, .65], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 

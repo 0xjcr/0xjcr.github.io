@@ -7,9 +7,9 @@ const ArtofEth = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.75, 0.80], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.75, 0.8, 0.85, .90], [0, 1, 1, 0]);
-    const opacityOut = useTransform(scrollYProgress, [0.85, .90], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.65, 0.70], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.65, 0.7, 0.75, .80], [0, 1, 1, 0]);
+    const opacityOut = useTransform(scrollYProgress, [0.75, .80], [1, 0]);
 
 
   return (

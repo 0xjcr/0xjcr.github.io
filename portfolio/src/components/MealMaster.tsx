@@ -7,8 +7,8 @@ const Projects = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.35, 0.45], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.35, 0.45, 0.50, 0.55], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.25, 0.35], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.25, 0.35, 0.40, 0.45], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 

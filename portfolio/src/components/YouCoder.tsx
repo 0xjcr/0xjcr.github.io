@@ -7,8 +7,8 @@ const YouCoder = () => {
 
     const { scrollYProgress } = useScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.05, 0.2], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.03, 0.15, 0.25, 0.35], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.05, 0.15], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0.03, 0.10, 0.15, 0.25], [0, 1, 1, 0]);
     // const opacityOut = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 
 
