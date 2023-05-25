@@ -59,7 +59,7 @@ const Heading = () => {
 
   return (
     <>
-      <div style={{ height: '40vh', width: '100vw' }}>
+      <div style={{ height: '60vh', width: '100vw' }}>
         <Sketch
           setup={setup}
           draw={draw}
@@ -71,11 +71,11 @@ const Heading = () => {
           <div className='p5-sketch' style={{ position: 'relative' }}>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div className='h-64 w-96'>
-                <h1 className='font-space text-transparent font-bold text-9xl bg-gradient-to-r from-gray-100 to-gray-800 bg-clip-text inline-block'>
+                <h1 className='font-space text-transparent font-bold text-7xl md:m-0 ml-4 md:text-9xl bg-gradient-to-r from-gray-100 to-gray-800 bg-clip-text inline-block'>
                   hello
                 </h1>
                 <motion.div
-                  className='h-4 w-4 rounded-full bg-gray-800 inline-block'
+                  className='h-2 w-2 md:h-4 md:w-4 rounded-full bg-gray-800 inline-block'
                   style={{ scale }}
                 ></motion.div>
                 <h3 className='font-space whitespace-nowrap text-2xl text-indigo-500 mt-6  ml-4 font-bold'>
@@ -91,7 +91,6 @@ const Heading = () => {
             </div>
           </div>
           <div className='flex justify-center w-full'>
-            {/* <KeyboardDoubleArrowUpIcon className=" !fill-white animate-bounce"/> */}
           </div>
         </div>
       </div>

@@ -15,8 +15,10 @@ function App() {
 
 return (
 <>
+<div className="overflow-x-hidden">
 <Progress />
 <Heading/>
+<Spacing/>
 <Skills/>
 <YouCoder/>
 <MealMaster/>
@@ -24,7 +26,7 @@ return (
 <ArtofEth/>
 <Contact />
 <About/>
-<Spacing/>
+</div>
 </>
   );
 }
