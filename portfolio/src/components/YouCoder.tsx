@@ -35,7 +35,7 @@ const YouCoder = () => {
             {' '}
             Recent Work
           </div>
-          <h1 className='text-lg md:text-5xl'>
+          <h1 className='text-2xl md:text-5xl md:text-indigo-500'>
             <a
               className='hover:text-indigo-400 z-50'
               href='https://www.youcoder.io'

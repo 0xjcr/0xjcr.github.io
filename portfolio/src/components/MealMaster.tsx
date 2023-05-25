@@ -35,7 +35,7 @@ const MealMaster = () => {
             {' '}
             Recent Work
           </div>
-          <h1 className='text-lg md:text-5xl'>
+          <h1 className='text-2xl md:text-5xl md:text-indigo-500'>
             <a
               className='hover:text-indigo-400 whitespace-nowrap'
               href='https://github.com/0xjcr/MealMasterAI'

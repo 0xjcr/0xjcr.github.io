@@ -36,7 +36,7 @@ const ArtofEth = () => {
             {' '}
             2017{' '}
           </div>
-          <h1 className='text-lg md:text-5xl'>
+          <h1 className='text-2xl md:text-5xl md:text-indigo-500'>
             <a
               className='hover:text-indigo-400'
               href='https://www.linkedin.com/pulse/crypto-art-art-cryptography-blockchains-beautiful-things-hagell/'

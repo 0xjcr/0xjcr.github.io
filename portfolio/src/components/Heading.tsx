@@ -3,6 +3,7 @@ import { motion, useTransform, useScroll } from 'framer-motion';
 import Sketch from 'react-p5';
 
 const Heading = () => {
+  // const [loading, setLoading] = useState(true);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -32,6 +33,7 @@ const Heading = () => {
         ySpeed: (Math.random() - 0.5) / 2,
       });
     }
+    // setLoading(false);
   };
 
   const draw = (p5:any) => {
