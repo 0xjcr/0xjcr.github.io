@@ -63,7 +63,7 @@ const Heading = () => {
         <Sketch
           setup={setup}
           draw={draw}
-          style={{ position: 'fixed', zIndex: 0, height: '100%', width: '100%' }}
+          // style={{ position: 'fixed', zIndex: 0, height: '100%', width: '100%' }}
         />
       </div>
       <div className='w-screen h-full flex items-center'>
