@@ -1,7 +1,14 @@
+import { useRef } from 'react';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import Sketch from 'react-p5';
 
 const Heading = () => {
+
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+
+
+
   interface Particle {
     x: number;
     y: number;
@@ -12,11 +19,11 @@ const Heading = () => {
   let particles: Particle[] = [];
 
   const setup = (p5: any, canvasParentRef: Element) => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight * 0.3).parent(
-      canvasParentRef
-    );
-    p5.background(0);
-
+    
+    let containerWidth = containerRef.current!.offsetWidth;
+    let containerHeight = containerRef.current!.offsetHeight;
+    p5.createCanvas(containerWidth, containerHeight).parent(canvasParentRef);
+  
     for (let i = 0; i < 1000; i++) {
       particles.push({
         x: Math.random() * p5.width,
@@ -27,46 +34,40 @@ const Heading = () => {
     }
   };
 
-  const draw = (p5: any) => {
+  const draw = (p5:any) => {
     p5.background(0);
-    p5.strokeWeight(3); // Change this value to adjust the size of the particle
-    p5.stroke(31, 41, 55); // Particle color
+    p5.strokeWeight(3); 
+    p5.stroke(31, 41, 55); 
 
     for (let i = 0; i < particles.length; i++) {
       let particle = particles[i];
 
-      // Update the position based on the speed
       particle.x += particle.xSpeed;
       particle.y += particle.ySpeed;
 
-      // Wrap the particles around to the other side of the screen
       if (particle.x < 0) particle.x = p5.width;
       else if (particle.x > p5.width) particle.x = 0;
       if (particle.y < 0) particle.y = p5.height;
       else if (particle.y > p5.height) particle.y = 0;
 
-      // Draw the particle
-      p5.stroke(31, 41, 55); // Particle color
-      p5.point(particle.x, particle.y); // Draw a single point at the particle's position
+      p5.stroke(31, 41, 55); 
+      p5.point(particle.x, particle.y); 
     }
   };
 
-  // Get the scroll y progress (0-1)
   const { scrollYProgress } = useScroll();
-
-  // Create a variable that scales from 1 to 1.5 as scrollYProgress goes from 0 to 1
   const scale = useTransform(scrollYProgress, [0, 0.15], [1, 300]);
 
   return (
     <>
-      <div style={{ height: '60vh', width: '100vw' }}>
+      <div ref={containerRef} style={{ height: '60vh', width: '100vw' }}>
         <Sketch
           setup={setup}
           draw={draw}
-          style={{ position: 'fixed', zIndex: 0, height: '100%', width: '100%' }}
+          style={{ position: 'fixed', zIndex: 0, height: 'auto' }}
         />
       </div>
-      <div className='w-screen h-full flex items-center'>
+      <div className='w-screen h-full flex items-center overscroll-none'>
         <div className='fixed top-1/3 left-1/2 mx-auto flex flex-col justify-between items-start transform -translate-x-1/2 -translate-y-1/2 w-4/6 h-96'>
           <div className='p5-sketch' style={{ position: 'relative' }}>
             <div style={{ position: 'relative', zIndex: 2 }}>
@@ -82,7 +83,7 @@ const Heading = () => {
                   I'm Jordan Rollins.
                 </h3>
                 <h4 className='font-space whitespace-nowrap text-xl text-indigo-500 mt-2  ml-4 font-bold'>
-                  Software Engineer{' '}
+                  Software Engineer
                 </h4>
                 <h3 className='font-space whitespace-nowrap text-md text-gray-100 mt-8 uppercase ml-4'>
                   Scroll to learn more.

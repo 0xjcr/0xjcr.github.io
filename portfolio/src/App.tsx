@@ -13,7 +13,7 @@ function App() {
 
 return (
 <>
-<div className="overflow-x-hidden">
+<div className="overflow-x-hidden overscroll-none">
 <Progress />
 <Heading/>
 <Spacing/>
