@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 const Contact = () => {
   return (
     
-    <div className='-mb-10 md:-mb-0 -mx-20  md:mx-0 fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-30'>
+    <div className='-mb-20 md:-mb-0 -mx-20  md:mx-0 fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-30'>
       <div className='h-14 w-60 rounded-r-md flex justify-center items-center space-x-2'>
         <div className='h-14 w-16 rounded-xl flex justify-center items-center'>
           <a
