@@ -1,4 +1,5 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Contact from './Contact';
 
 export default function Progress() {
   const { scrollYProgress } = useScroll();
@@ -10,7 +11,8 @@ export default function Progress() {
   );
 
   return (
-    <div className='fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-10'>
+    <div className='-mb-10 md:-mb-0 fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-10'>
+      <Contact/>
       <div
         style={{
           display: 'flex',

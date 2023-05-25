@@ -1,8 +1,6 @@
 import Heading from './components/Heading';
 import Skills from './components/Skills';
-
 import Progress from './components/Progress';
-import Contact from './components/Contact';
 import YouCoder from './components/YouCoder';
 import MealMaster from './components/MealMaster';
 import Scne from './components/Scne';
@@ -24,7 +22,6 @@ return (
 <MealMaster/>
 <Scne/>
 <ArtofEth/>
-<Contact />
 <About/>
 </div>
 </>
