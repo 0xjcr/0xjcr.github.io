@@ -27,7 +27,7 @@ const ArtofEth = () => {
 
         <div className='flex flex-col justify-start items-center mt-4'>
           <div className='h-96 w-96 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-100 via-indigo-500 to-gray-800 rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl shadow-indigo-500 '>
-            <img className='md:scale-[200%] mt-40' src={AOE4} alt='' />
+            <img className='md:scale-[200%] mt-36' src={AOE4} alt='' />
           </div>
         </div>
 
