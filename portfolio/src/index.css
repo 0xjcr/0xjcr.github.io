@@ -10,7 +10,7 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: whitesmoke;
+  background: linear-gradient(to right, #F3F4F6, #1F2937);
   position:relative;
   width: 100%;
 
