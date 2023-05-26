@@ -52,7 +52,7 @@ const Heading = () => {
   };
 
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.15], [1, 150]);
+  const scale = useTransform(scrollYProgress, [0, 0.15], [1, 300]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -93,8 +93,8 @@ const Heading = () => {
                   hello
                 </h1>
                 <motion.div
-                  className='h-3 w-3 md:h-4 md:w-4 rounded-full bg-gray-800 inline-block'
-                  style={{ scale }}
+                  className='h-6 w-6 scale-50 md:scale-100 md:h-4 md:w-4 rounded-full bg-gray-800 inline-block'
+                  style={{ scale}}
                 ></motion.div>
                 <h3 className='font-space whitespace-nowrap text-3xl text-indigo-500 mt-6  ml-4 font-bold'>
                   I'm Jordan Rollins.
