@@ -11,7 +11,7 @@ export default function Progress() {
   );
 
   return (
-    <div className='-mb-20  md:-mb-0 -mx-20 md:mx-0 fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-10'>
+    <div className='-mb-20  md:-mb-0 -mx-20 md:mx-0 fixed bottom-0 left-0 h-96 w-96 flex items-center justify-center z-50'>
       <Contact/>
       <div
         style={{
