@@ -1,22 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light theme - stone color palette */
+  --background: theme('colors.stone.300');
+  --foreground: theme('colors.stone.800');
+  --card: theme('colors.stone.100');
+  --card-foreground: theme('colors.stone.900');
+  --primary: theme('colors.stone.900');
+  --primary-foreground: theme('colors.stone.50');
+  --secondary: theme('colors.stone.200');
+  --secondary-foreground: theme('colors.stone.800');
+  --muted: theme('colors.stone.100');
+  --muted-foreground: theme('colors.stone.500');
+  --accent: theme('colors.stone.200');
+  --accent-foreground: theme('colors.stone.900');
+  --border: theme('colors.stone.300');
+  --input: theme('colors.stone.300');
+  --ring: theme('colors.stone.400');
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+ 
 }
 
 body {
