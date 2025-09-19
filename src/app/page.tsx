@@ -215,8 +215,8 @@ const page = () => {
             <h3 className="text-xl font-bold">DESIGN</h3>
             <ul className="space-y-2 text-lg font-light">
               <li>FIGMA</li>
-              <li>SKETCH</li>
-              <li>PRINCIPLE</li>
+              <li>STORYBOOK</li>
+              <li>CANVA</li>
               <li>FRAMER</li>
             </ul>
           </motion.div>
