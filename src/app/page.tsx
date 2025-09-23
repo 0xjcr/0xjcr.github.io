@@ -4,7 +4,7 @@ import { motion, Variants } from 'framer-motion'
 import { LinkPreview } from "./components/LinkPreview";
 
 const page = () => {
-  // Animation variants for different types of content
+  // Animation variants 
   const fadeInUp: Variants = {
     hidden: {
       opacity: 0,
