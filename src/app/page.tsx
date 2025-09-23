@@ -168,9 +168,14 @@ const page = () => {
             <p className="text-sm font-medium">NEXT.JS • TAILWIND </p>
           </motion.div>
           <motion.div className="space-y-4" variants={staggerItem}>
-            <h3 className="text-2xl font-bold  hover:text-blue-800 hover:cursor-pointer w-fit  ">TERMINAL WAIT</h3>
-            <p className="text-lg font-light">Generate the probability your flight will actually arrive on time</p>
-            <p className="text-sm font-medium">NEXT.JS • TAILWIND • CONVEX • OPENAI API</p>
+            <LinkPreview
+              url="https://terminal-wait.vercel.app/"
+              imageSrc="/terminal_wait_site.png"
+              isStatic
+
+            ><h3 className="text-2xl font-bold  hover:text-blue-800 hover:cursor-pointer w-fit">TERMINAL WAIT</h3></LinkPreview>
+            <p className="text-lg font-light">Generate the probability your flight will actually arrive on time.</p>
+            <p className="text-sm font-medium">NEXT.JS • TAILWIND • MUI • CONVEX • OPENAI API</p>
           </motion.div>
         </motion.div>
       </motion.section>
