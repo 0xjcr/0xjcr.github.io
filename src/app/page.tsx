@@ -147,16 +147,7 @@ const page = () => {
             <p className="text-lg font-light">Full Stack Developer · 2 years</p>
             <p className="text-sm font-medium">REACT • NEXT.JS • STRIPE • GCP • CONVEX</p>
           </motion.div>
-          <motion.div className="space-y-4" variants={staggerItem}>
-            <LinkPreview
-              url="https://handler-eta.vercel.app/"
-              imageSrc="/handler_site.png"
-              isStatic
-
-            ><h3 className="text-2xl font-bold  hover:text-blue-800 hover:cursor-pointer w-fit">HANDLER</h3></LinkPreview>
-            <p className="text-lg font-light">Conceptual personal project for an agentic AI web 3 product.</p>
-            <p className="text-sm font-medium">NEXT.JS • TAILWIND • OPENAI API • ONCHAINKIT</p>
-          </motion.div>
+          
           <motion.div className="space-y-4" variants={staggerItem}>
             <LinkPreview
               url="https://edit-labs.vercel.app/"
@@ -177,7 +168,18 @@ const page = () => {
             <p className="text-lg font-light">Generate the probability your flight will actually arrive on time.</p>
             <p className="text-sm font-medium">NEXT.JS • TAILWIND • MUI • CONVEX • OPENAI API</p>
           </motion.div>
+          <motion.div className="space-y-4" variants={staggerItem}>
+            <LinkPreview
+              url="https://handler-eta.vercel.app/"
+              imageSrc="/handler_site.png"
+              isStatic
+
+            ><h3 className="text-2xl font-bold  hover:text-blue-800 hover:cursor-pointer w-fit">HANDLER</h3></LinkPreview>
+            <p className="text-lg font-light">Conceptual personal project for an agentic AI web 3 product.</p>
+            <p className="text-sm font-medium">NEXT.JS • TAILWIND • OPENAI API • ONCHAINKIT</p>
+          </motion.div>
         </motion.div>
+        
       </motion.section>
 
       <motion.section
@@ -271,11 +273,25 @@ const page = () => {
           <motion.div className="space-y-6 sm:space-y-8" variants={staggerItem}>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">GITHUB</h3>
-              <p className="text-base sm:text-lg font-light break-all sm:break-normal">github.com/0xjcr</p>
+              <a
+                href="https://github.com/0xjcr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base sm:text-lg font-light break-all sm:break-normal hover:text-blue-800 hover:cursor-pointer"
+              >
+                github.com/0xjcr
+              </a>
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">LINKEDIN</h3>
-              <p className="text-base sm:text-lg font-light break-all sm:break-normal">linkedin.com/in/jordanrollins</p>
+              <a
+                href="https://linkedin.com/in/jordanrollins"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base sm:text-lg font-light break-all sm:break-normal hover:text-blue-800 hover:cursor-pointer"
+              >
+                linkedin.com/in/jordanrollins
+              </a>
             </div>
           </motion.div>
         </motion.div>
