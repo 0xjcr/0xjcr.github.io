@@ -264,7 +264,7 @@ const page = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">CV</h3>
-              <a href="/Resume-2025.pdf"
+              <a href="/Resume_Q32025.pdf"
                 download="Jordan_Rollins_Resume.pdf" className="text-base sm:text-lg font-light hover:text-blue-800 hover:cursor-pointer">download</a>
             </div>
           </motion.div>
