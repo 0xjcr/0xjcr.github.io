@@ -224,8 +224,6 @@ const page = () => {
               <li>FIGMA</li>
               <li>STORYBOOK</li>
               <li>CANVA</li>
-              <li>STORYBOOK</li>
-              <li>CANVA</li>
               <li>FRAMER</li>
             </ul>
           </motion.div>
