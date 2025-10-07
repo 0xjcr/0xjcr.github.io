@@ -260,7 +260,12 @@ const page = () => {
           <motion.div className="space-y-6 sm:space-y-8" variants={staggerItem}>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">EMAIL</h3>
-              <p className="text-base sm:text-lg font-light break-all sm:break-normal">hello@jordanrollins.com</p>
+              <a
+                href="mailto:hello@jordanrollins.com"
+                className="text-base sm:text-lg font-light break-all sm:break-normal hover:text-blue-800 "
+              >
+                hello@jordanrollins.com
+              </a>
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">CV</h3>
