@@ -1,9 +1,10 @@
 'use client'
-import React from 'react'
-import { motion, Variants } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion, Variants, AnimatePresence } from 'framer-motion'
 import { LinkPreview } from "./components/LinkPreview";
 
 const page = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   // Animation variants 
   const fadeInUp: Variants = {
     hidden: {
@@ -85,12 +86,74 @@ const page = () => {
         variants={fadeIn}
       >
         <div className="text-foreground font-bold text-lg">JR</div>
-        <nav className="flex space-x-12">
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex space-x-12">
           <a href="#work" className="text-foreground font-medium hover:font-bold transition-all">RECENT WORK</a>
           <a href="#stack" className="text-foreground font-medium hover:font-bold transition-all">STACK</a>
           <a href="#contact" className="text-foreground font-medium hover:font-bold transition-all">CONTACT</a>
         </nav>
+
+        {/* Mobile hamburger button */}
+        <button
+          className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <motion.span
+            className="block w-6 h-0.5 bg-foreground"
+            animate={mobileMenuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.2 }}
+          />
+          <motion.span
+            className="block w-6 h-0.5 bg-foreground"
+            animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+            transition={{ duration: 0.2 }}
+          />
+          <motion.span
+            className="block w-6 h-0.5 bg-foreground"
+            animate={mobileMenuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.2 }}
+          />
+        </button>
       </motion.header>
+
+      {/* Mobile menu overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.nav
+            className="md:hidden fixed top-24 left-0 right-0 bg-background border-b border-foreground z-50"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="flex flex-col px-8 py-6 space-y-4">
+              <a
+                href="#work"
+                className="text-foreground font-medium text-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                RECENT WORK
+              </a>
+              <a
+                href="#stack"
+                className="text-foreground font-medium text-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                STACK
+              </a>
+              <a
+                href="#contact"
+                className="text-foreground font-medium text-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                CONTACT
+              </a>
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
 
       <motion.div
         className="w-full py-24 px-8"
@@ -147,6 +210,17 @@ const page = () => {
             <p className="text-lg font-light">Full Stack Developer · 2 years</p>
             <p className="text-sm font-medium">REACT • NEXT.JS • STRIPE • GCP • CONVEX</p>
           </motion.div>
+
+          <motion.div className="space-y-4" variants={staggerItem}>
+            <LinkPreview
+              url="https://bubblesapp.dev"
+              imageSrc="/bubbles_site.png"
+              isStatic
+
+            ><h3 className="text-2xl font-bold  hover:text-blue-800 hover:cursor-pointer w-fit">BUBBLES SHARING IOS APP</h3></LinkPreview>
+            <p className="text-lg font-light">A peer-to-peer resource sharing network app, live on IOS.</p>
+            <p className="text-sm font-medium">REACT NATIVE (EXPO) • CONVEX • DIGIT • RESEND • GCP</p>
+          </motion.div>
           
           <motion.div className="space-y-4" variants={staggerItem}>
             <LinkPreview
@@ -197,13 +271,15 @@ const page = () => {
           STACK
         </motion.h2>
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 md:grid-cols-3 gap-8"
           variants={staggerContainer}
         >
           <motion.div className="space-y-8" variants={staggerItem}>
             <h3 className="text-xl font-bold">FRONTEND</h3>
             <ul className="space-y-2 text-lg font-light">
               <li>REACT</li>
+              <li>REACT NATIVE</li>
+              <li>EXPO</li>
               <li>NEXT.JS</li>
               <li>TYPESCRIPT</li>
               <li>TAILWIND</li>
@@ -216,6 +292,16 @@ const page = () => {
               <li>EXPRESS</li>
               <li>CONVEX</li>
               <li>POSTGRESQL</li>
+              <li>DOCKER</li>
+            </ul>
+          </motion.div>
+          <motion.div className="space-y-8" variants={staggerItem}>
+            <h3 className="text-xl font-bold">AI / ML</h3>
+            <ul className="space-y-2 text-lg font-light">
+              <li>OPENAI API</li>
+              <li>CLAUDE API</li>
+              <li>LANGCHAIN</li>
+              <li>VERCEL AI SDK</li>
             </ul>
           </motion.div>
           <motion.div className="space-y-8" variants={staggerItem}>
@@ -228,14 +314,15 @@ const page = () => {
             </ul>
           </motion.div>
           <motion.div className="space-y-8" variants={staggerItem}>
-            <h3 className="text-xl font-bold">TOOLS</h3>
+            <h3 className="text-xl font-bold">DEVOPS</h3>
             <ul className="space-y-2 text-lg font-light">
-              <li>GIT</li>
-              <li>AWS</li>
+              <li>GITHUB ACTIONS</li>
+              <li>JEST</li>
+              <li>CYPRESS</li>
               <li>GCP</li>
-              <li>VERCEL</li>
             </ul>
           </motion.div>
+          
         </motion.div>
       </motion.section>
 
@@ -269,7 +356,7 @@ const page = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">CV</h3>
-              <a href="/Resume_Q32025.pdf"
+              <a href="/Resume2026.pdf"
                 download="Jordan_Rollins_Resume.pdf" className="text-base sm:text-lg font-light hover:text-blue-800 hover:cursor-pointer">download</a>
             </div>
           </motion.div>
