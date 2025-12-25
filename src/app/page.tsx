@@ -202,7 +202,7 @@ const page = () => {
         >
           <motion.div className="space-y-4" variants={staggerItem}>
             <LinkPreview
-              url="https://www.tromero.ai"
+              url="https://www.linkedin.com/company/tromero"
               imageSrc="/tromero_site.png"
               isStatic
               
