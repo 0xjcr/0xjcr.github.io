@@ -178,7 +178,7 @@ const page = () => {
           className="text-xl mt-8 max-w-md"
           variants={staggerItem}
         >
-          Software Engineer & Designer
+          Full Stack Developer 
         </motion.p>
       </motion.div>
 
@@ -207,8 +207,19 @@ const page = () => {
               isStatic
               
             ><h3 className="text-2xl  font-bold uppercase hover:text-blue-800 hover:cursor-pointer w-fit">Tromero</h3></LinkPreview>
-            <p className="text-lg font-light">Full Stack Developer · 2 years</p>
+            <p className="text-lg font-light">Early Stage AI Startup · Full Stack Developer · 2 years</p>
             <p className="text-sm font-medium">REACT • NEXT.JS • STRIPE • GCP • CONVEX</p>
+          </motion.div>
+
+          <motion.div className="space-y-4" variants={staggerItem}>
+            <LinkPreview
+              url="https://aipha.market"
+              imageSrc="/aipha_site.png"
+              isStatic
+
+            ><h3 className="text-2xl  font-bold uppercase hover:text-blue-800 hover:cursor-pointer w-fit">Aipha Market</h3></LinkPreview>
+            <p className="text-lg font-light">Production prediction marketplace with Superforcaster analysis.</p>
+            <p className="text-sm font-medium">REACT • NEXT.JS • THIRDWEB • POLYMARKET API • GCP • CONVEX</p>
           </motion.div>
 
           <motion.div className="space-y-4" variants={staggerItem}>
@@ -298,6 +309,7 @@ const page = () => {
           <motion.div className="space-y-8" variants={staggerItem}>
             <h3 className="text-xl font-bold">AI / ML</h3>
             <ul className="space-y-2 text-lg font-light">
+              <li>GOOGLE AI STUDIO</li>
               <li>OPENAI API</li>
               <li>CLAUDE API</li>
               <li>LANGCHAIN</li>
